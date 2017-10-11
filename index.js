@@ -1,4 +1,6 @@
 const config = require('./config')
+// debug的用法
+// require() 返回的是 module.exports 而不是 exports，属于commonJS规范，node模块机制
 const debug = require('debug')('qcloud-sdk[init]')
 const { ERRORS } = require('./lib/constants')
 
@@ -68,3 +70,5 @@ module.exports = function init (options) {
         message: require('./lib/message')
     }
 }
+// 理解Koa的中间件级联返回的特征
+

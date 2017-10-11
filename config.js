@@ -1,3 +1,4 @@
+// 配置config的set方法，在初始化时配置config
 const configs = {}
 
 configs.set = function (properties) {
