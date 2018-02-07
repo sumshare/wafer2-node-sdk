@@ -87,6 +87,7 @@ module.exports = function init(options) {
 
         return {
             config,
+            // 数据库连接，不谈
             mysql: require('./lib/mysql'),
             auth: require('./lib/auth'),
             uploader: require('./lib/upload'),
